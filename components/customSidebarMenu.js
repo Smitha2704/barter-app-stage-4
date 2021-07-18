@@ -11,9 +11,7 @@ export default class customSidebarMenu extends Component{
         <DrawerItems {...this.props}/>
         <View style={{flex:1,justifyContent:'flex-end',paddingBottom:30}}>
           <TouchableOpacity style={{justifyContent:'center',padding:10,height:30,width:'100%'}}
-          onPress = {() => {
-              this.props.navigation.navigate('WelcomeScreen')
-              firebase.auth().signOut()
+         
           }}>
             <Text>Logout</Text>
           </TouchableOpacity>
